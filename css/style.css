@@ -1,0 +1,135 @@
+.jumbotron {
+  margin-top: 0;
+  background: url(../img/bg.jpeg) no-repeat;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 0px;
+}
+.jumbotron h1 {
+  color: #fff;
+  font-family: roboto,'Open Sans';
+  font-weight: lighter;
+  margin-top: 60px;
+
+}
+
+.jumbotron em {
+  color: #fff;
+  font-size: 1.2em;
+}
+.navbar {
+  margin-bottom: 0;
+  background-color: #fff;
+}
+.navbar-default {
+  background-color:#fff;
+}
+
+h2 {
+  font-family: roboto,'open sans', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.small-hr {
+  width: 15%;
+  background-color: black;
+  border-color: #A8A6A6;
+  margin-top: 15px;
+  margin-bottom: 40px;
+}
+.white {
+  border-color: #fff;
+}
+/* Forms and Fields */
+input.hero {
+  width: 300px;
+  padding: 6px;
+}
+
+input.hero:focus {
+  border-radius: 7px;
+  border: 2px #fff solid;
+}
+
+
+/* Margins and paddings */
+.mr-top {
+  margin-top: 20px;
+}
+
+.mr-bottom {
+  margin-bottom: 20px;
+}
+
+.mr-right {
+  margin-right: 14px;
+}
+
+.mr-bottom-x {
+  margin-bottom: 55px;
+}
+
+.mr-bottom-xl {
+  margin-bottom: 75px;
+}
+
+.center {
+  text-align: center;
+}
+/* Icons */
+i.icon{
+  font-size: 3.2em;
+  border: 1px solid #4F4F4F;
+  border-radius: 100px;
+  padding: 15px;
+  transition-property: all;
+  transition-duration: .5s;
+}
+i.icon:hover {
+  background-color: #4F4F4F;
+  color: #fff;
+}
+
+/* Features */
+.features {
+  background-color: #3498DB;
+  color: #fff;
+}
+
+.feature-icon-box {
+  display: table;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 15px;
+}
+
+.feature-content-box {
+  display: table-cell;
+  padding-right: 30px;
+  vertical-align: top;
+  color: #fff;
+}
+
+.feature-icon {
+  display: table-cell;
+  font-size: 50px;
+  padding-top: 40px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+h4 {
+  font-size: 1.7em;
+}
+
+.text-right {
+  text-align: right;
+}
+.text-left {
+  text-align: right;
+}
