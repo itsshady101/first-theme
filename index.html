@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 </head>
 <body>
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default" id="header">
     <div class="container-fluid">
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class="navbar-header">
@@ -27,9 +27,9 @@
       <div class="collapse navbar-collapse navbar-right" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li><a href="#">Home</a></li>
-          <li><a href="#">Features</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Contact Us</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
@@ -38,10 +38,10 @@
   <div class="jumbotron">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 col-md-offset-1">
-          <h1 class="animated fadeInUp">Welcome to this free awesome template.</h1>
-          <span class="overflow animated fadeInUp"><em class="mr-bottom">Hola! this is free multipurpose template download <br>it and use it free for your next project!</em></span><br>
-          <div class="animated fadeInUp">
+        <div class="col-md-10 col-md-offset-1 animated fadeIn">
+          <h1 class="">Welcome to this free awesome template.</h1>
+          <span class="overflow"><em class="mr-bottom">Hola! this is free multipurpose template download <br>it and use it free for your next project!</em></span><br>
+          <div class="">
             <input type="text" placeholder="Enter your email id." class="hero mr-top mr-bottom"><br>
             <button class="btn btn-primary mr-right mr-bottom-xl">Download Now</button>
             <button class="btn btn-secondary mr-bottom-xl">Know More</button>
@@ -51,11 +51,14 @@
     </div>
   </div>
 
-  <section>
+  <section id="features">
     <div class="container">
-      <div class="row mr-bottom-x">
+      <div class="row">
         <h2>Features</h2>
         <hr class="small-hr">
+      </div>
+      <div class="row mr-bottom-x animated fadeIn">
+        
         <div class="col-md-4 center">
           <i class="fa fa-code icon"></i>
           <h3>Awesome Design</h3>
@@ -167,7 +170,100 @@
       </div>
     </div>
   </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="row">
+        <h2 class="white">Contact Us</h2>
+        <hr class="small-hr white">
+      </div>
+
+      <div class="row">
+        <div class="col-md-8 col-md-offset-2 animated fadeInUp">
+          <form action="#" class="center">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name."><br>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your email."><br>
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" cols="" rows="4" placeholder="Enter your message."></textarea><br>
+
+            <input type="submit" value="submit" class="btn mr-bottom-x">
+          </form>
+        </div>
+      </div>    
+  
+    </div>
+
+  </section>
+
+  <section class="about-us" id="about">
+    <div class="container">
+      <div class="row">
+        <h2 class="white">About Us</h2>
+        <hr class="small-hr">
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-sm-6 center">
+          <div class="card">
+            <img src="img/1.jpeg" alt="" class="img-responsive center">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore alias minus commodi eligendi reprehenderit ea illum placeat recusandae architecto magnam, aspernatur tenetur doloremque odio maxime ducimus voluptates eveniet cumque assumenda!</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 center">
+          <div class="card">
+            <img src="img/1.jpeg" alt="" class="img-responsive center">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore alias minus commodi eligendi reprehenderit ea illum placeat recusandae architecto magnam, aspernatur tenetur doloremque odio maxime ducimus voluptates eveniet cumque assumenda!</p>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 center">
+          <div class="card">
+            <img src="img/1.jpeg" alt="" class="img-responsive center">
+            <h3>John Doe</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore alias minus commodi eligendi reprehenderit ea illum placeat recusandae architecto magnam, aspernatur tenetur doloremque odio maxime ducimus voluptates eveniet cumque assumenda!</p>
+          </div>
+        </div>
+
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <p>All rights reserved <u>Modern Themes 2015</u></p>
+        </div>
+        <div class="col-md-4">
+          <a href="#header">Back to top</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
   <script type="text/javascript" src="js/jquery.js"></script>
   <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/app.js"></script>
+
+  <script>
+    $(function() {
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
